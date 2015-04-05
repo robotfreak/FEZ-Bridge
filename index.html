@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fez-bridge by robotfreak</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Fez-bridge</h1>
+        <p>FezBridge is an Android Debug Bridge (ADB) implementation in .NETMF for FEZ Devices.</p>
+        <p class="view"><a href="https://github.com/robotfreak/FEZ-Bridge">View the Project on GitHub <small>robotfreak/FEZ-Bridge</small></a></p>
+        <ul>
+          <li><a href="https://github.com/robotfreak/FEZ-Bridge/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/robotfreak/FEZ-Bridge/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/robotfreak/FEZ-Bridge">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="fezbridge" class="anchor" href="#fezbridge" aria-hidden="true"><span class="octicon octicon-link"></span></a>FezBridge</h1>
+
+<p><a href="https://github.com/robotfreak/FEZ-Bridge">FezBridge</a> is an <a href="http://developer.android.com/guide/developing/tools/adb.html">Android Debug Bridge (ADB)</a> implementation in .NETMF for FEZ Devices.</p>
+
+<p><a href="https://github.com/robotfreak/robotfreak/tree/master/fez-bridge"><img src="https://farm8.staticflickr.com/7608/16904175826_a844a4b747_m.jpg" alt="FezBridge"></a></p>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>FezBridge is ported from the [<a href="http://code.google.com/p/microbridge">http://code.google.com/p/microbridge</a> MicroBridge] for Arduino. 
+It is programmed in .NETMF and runs on FEZ devices from <a href="http://www.ghielectronics.com/">http://www.ghielectronics.com/</a> GHI electronics, like the <a href="http://www.ghielectronics.com/catalog/product/133">FEZ Domino</a>. Other devices like [FEZ Panda]<a href="http://www.ghielectronics.com/catalog/product/135">http://www.ghielectronics.com/catalog/product/135</a>) needs a small <a href="http://ghielectronics.blogspot.com/2011/03/usb-host-support-is-added-on-fez-panda.html">hardware modification</a> to support USB host mode.</p>
+
+<h2>
+<a id="details" class="anchor" href="#details" aria-hidden="true"><span class="octicon octicon-link"></span></a>Details</h2>
+
+<p>At the moment FezBridge is a work in progress. The basic communication and USB enuration has been done.</p>
+
+<p>ADB works on almost every Android phone. That is important if you wan't to use <a href="http://developer.android.com/guide/topics/usb/adk.html">Android Open Accessory (ADK)</a>. ADK works only on Android phones with the newest firmware v2.3.4. But not all phones will support ADK, even with the newest firmware. This is where ADB can help. It has nearly the same functionality as ADK.</p>
+
+<p>You can use ADB to forward TCP/IP ports via USB between phone and hardware. Simple data pipes can be used for communication. </p>
+
+<p>A description of the ADB protocol can be found <a href="http://lxr.e2g.org/source/system/core/adb/protocol.txt">ADB Protocol</a> here.</p>
+
+<h2>
+<a id="to-do-list" class="anchor" href="#to-do-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>To do list</h2>
+
+<ul>
+<li>build seperate driver class</li>
+<li>Demo programs </li>
+<li>Demo apps (Android side)</li>
+</ul>
+
+<h2>
+<a id="videos" class="anchor" href="#videos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Videos</h2>
+
+<ul>
+<li>
+<a href="http://www.youtube.com/watch?v=sDUndL7bEic"><img src="https://i.ytimg.com/vi/BqD5-chWdDY/2.jpg?time=1427315296596" alt="Android Open Accessory DIY DemoKit"></a> Android Open Accessory DIY DemoKit</li>
+<li>
+<a href="https://www.youtube.com/watch?v=sDUndL7bEic"><img src="https://i.ytimg.com/vi/sDUndL7bEic/2.jpg?time=1427315527024" alt="FezBridge - Android Debug Bridge with Fez Domino"></a> FezBridge - Android Debug Bridge with Fez Domino</li>
+</ul>
+
+<h2>
+<a id="weblinks" class="anchor" href="#weblinks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Weblinks</h2>
+
+<ul>
+<li>
+<a href="https://github.com/robotfreak/robotfreak/new/master/fez-bridge">https://github.com/robotfreak/robotfreak/new/master/fez-bridge</a> FezBridge Source repository</li>
+<li>
+<a href="http://developer.android.com/guide/developing/tools/adb.html">http://developer.android.com/guide/developing/tools/adb.html</a> Android Debug Bridge (ADB)</li>
+<li>
+<a href="http://www.ghielectronics.com/">http://www.ghielectronics.com/</a> GHI electronics</li>
+<li>
+<a href="http://code.google.com/p/microbridge">http://code.google.com/p/microbridge</a> MicroBridge</li>
+</ul>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/robotfreak">robotfreak</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
